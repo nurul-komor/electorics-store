@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+
+Author Name:Nurul Komor
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+1. Body
+2. Header-top
+2. Navbar
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+:root {
+    --primary: #F8D604;
+    --dark: #333E48;
+    --body: #000;
+    --box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+    --white: #f5f3f3;
+}
+
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--body);
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--white);
+}
+
+
+
+/* ------------------------------------------------
+    ***Header Top  Css Start***
+------------------------------------------------- */
