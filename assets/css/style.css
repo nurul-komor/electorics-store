@@ -17,29 +17,37 @@ Author Name:Nurul Komor
     Reset Css
 ==========================================
 */
+@font-face {
+    font-family: 'Helvetica-regular';
+    src: url('../fonts/Helvetica.ttf');
+}
+@font-face {
+    font-family: 'Helvetica-bold';
+    src: url('../fonts/Helvetica-Bold.ttf');
+}
 :root {
     --primary: #F8D604;
     --dark: #333E48;
-    --body: #000;
+    --body: #333E48;
     --box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
     --white: #f5f3f3;
 }
 
 html,
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Helvetica-regular';
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Helvetica-regular';
     color: var(--body);
     font-size: 14px;
     line-height: 1.8;
     overflow-x: hidden;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 ul li {
@@ -72,4 +80,39 @@ a:hover {
 
 /* ------------------------------------------------
     ***Header Top  Css Start***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***secondary nav links  Css Start***
+------------------------------------------------- */
+.drop-downlinks{
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   border-top: 5px solid var(--primary);
+   position: relative;
+}
+.drop-downlinks ul {
+    position: absolute;
+}
+.drop-downlinks   a.dropdown-toggle::after{
+    display: none;
+}
+.drop-downlinks  li{
+    position: relative;
+     transition: 0.5s;
+   
+}
+.drop-downlinks   ul.dropdown-menu{
+    position: absolute;
+    top: 0;
+    left: 102%;
+    transition: 0.5s;
+    border: none;
+     border-top: 5px solid var(--primary);
+}
+.drop-downlinks li:hover  > ul.dropdown-menu{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* ------------------------------------------------
+    ***secondary nav links  Css Start***
 ------------------------------------------------- */
