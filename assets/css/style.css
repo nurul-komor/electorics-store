@@ -39,6 +39,7 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
 }
 
 body {
@@ -48,6 +49,7 @@ body {
     line-height: 1.8;
     overflow-x: hidden;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 ul li {
@@ -84,22 +86,48 @@ a:hover {
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
 ------------------------------------------------- */
+
 .drop-downlinks{
     border:none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
    border-top: 5px solid var(--primary);
    position: relative;
+   cursor: pointer;
 }
-.drop-downlinks ul {
+.drop-downlinks.dropdown-menu, .drop-downlinks ul {
     position: absolute;
+    font-size: .875rem;
+    
 }
-.drop-downlinks   a.dropdown-toggle::after{
+
+.drop-downlinks  a.dropdown-toggle::after{
     display: none;
 }
-.drop-downlinks  li{
+
+
+.drop-downlinks  li a{
     position: relative;
-     transition: 0.5s;
-   
+    transition: 0.5s;
+    padding: 8px;
+}
+.drop-downlinks  li::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: #b2bec3;
+    height: 0.7px;
+    width: 80%;
+    left: 10%;
+    opacity: 0.7;
+}
+.drop-downlinks  li > a {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.drop-downlinks  li > a svg{
+    padding-left: 5px;
 }
 .drop-downlinks   ul.dropdown-menu{
     position: absolute;
@@ -107,11 +135,13 @@ a:hover {
     left: 102%;
     transition: 0.5s;
     border: none;
-     border-top: 5px solid var(--primary);
+    border-top: 5px solid var(--primary);
+    width: 100%;
 }
 .drop-downlinks li:hover  > ul.dropdown-menu{
     display: block;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 1s;
 }
 /* ------------------------------------------------
     ***secondary nav links  Css Start***

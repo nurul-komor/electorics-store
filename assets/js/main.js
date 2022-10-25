@@ -1,3 +1,4 @@
+// $('.drop-downlinks.dropdown-menu').click();
 // /* $(document).ready(function ($) {
 //   //meanmenu
 //   $("#navbar nav").meanmenu();
@@ -39,7 +40,7 @@ $(".hero-section").owlCarousel({
         },
     },
 });
-$('.drop-downlinks.dropdown-menu').click();
+
 //   /*Magnific image */
 //   var imaggepoppup = $(".image-popup");
 //   if (imaggepoppup.length) {
