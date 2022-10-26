@@ -27,6 +27,7 @@ Author Name:Nurul Komor
 }
 :root {
     --primary: #F8D604;
+    --secondary: #FFFFFF;
     --dark: #333E48;
     --body: #333E48;
     --box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
@@ -81,7 +82,13 @@ a:hover {
 
 
 /* ------------------------------------------------
-    ***Header Top  Css Start***
+    ***hero -section Top  Css Start***
+------------------------------------------------- */
+.hero-section{
+    min-height: 100vh;
+}
+/* ------------------------------------------------
+    ***hero -section  Css ends***
 ------------------------------------------------- */
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
@@ -131,7 +138,7 @@ a:hover {
 }
 .drop-downlinks   ul.dropdown-menu{
     position: absolute;
-    top: 0;
+    top: 30%;
     left: 102%;
     transition: 0.5s;
     border: none;
@@ -142,6 +149,9 @@ a:hover {
     display: block;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 1s;
+}
+.drop-downlinks   ul.dropdown-menu >li ul.dropdown-menu{
+    top: 50%;
 }
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
