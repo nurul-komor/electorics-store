@@ -101,21 +101,33 @@ a:hover {
    position: relative;
    cursor: pointer;
 }
+.secondary-nav-items .drop-downlinks{
+     border-top: 5px solid var(--primary);
+}
+.secondary-nav-items .drop-downlinks li.heading:first-child{
+    background-color: var(--primary);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.secondary-nav-items .drop-downlinks li.heading:first-child::after{
+    display: none;
+}
 .drop-downlinks.dropdown-menu, .drop-downlinks ul {
     position: absolute;
     font-size: .875rem;
-    
 }
 
 .drop-downlinks  a.dropdown-toggle::after{
     display: none;
 }
 
-
+.drop-downlinks  li {
+    padding: 0 14px;
+}
 .drop-downlinks  li a{
     position: relative;
     transition: 0.5s;
-    padding: 8px;
+    padding: 7.5px 5px;
 }
 .drop-downlinks  li::after{
     content: "";
@@ -153,6 +165,7 @@ a:hover {
 .drop-downlinks   ul.dropdown-menu >li ul.dropdown-menu{
     top: 50%;
 }
+
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
 ------------------------------------------------- */

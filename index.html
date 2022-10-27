@@ -98,17 +98,12 @@
 				<form action="">
 					<div class="input-group mb-3">
 						<input type="text" class="form-control" aria-label="Text input with dropdown button">
-						<button class="btn btn-outline-secondary dropdown-toggle" type="button"
-							data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
-						<ul class="dropdown-menu dropdown-menu-end">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
-							<li>
-								<hr class="dropdown-divider">
-							</li>
-							<li><a class="dropdown-item" href="#">Separated link</a></li>
-						</ul>
+						<select class="form-select" id="inputGroupSelect02">
+							<option>Open this </option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
 						<button type="submit" class="btn btn-primary"><i
 								class="fa-solid fa-magnifying-glass"></i></button>
 					</div>
@@ -134,113 +129,109 @@
 	<div class="secondary-nav-items container">
 		<div class="row">
 			<div class="col-md-3">
-				<div class="drop-down dropdown show">
-					<h6 class="dropdown-toggle" aria-expanded="true">
-						<i class="fa-solid fa-list"></i> All Departments
-						</h6n>
-						<ul class="drop-downlinks dropdown-menu show">
-							<li class="fw-bold dropdown-item">
-								Value of the day
-							</li>
-							<li class="fw-bold dropdown-item">
-								Top 100 Offers
-							</li>
-							<li class="fw-bold dropdown-item">
-								New Arrivals
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark" data-bs-toggle="dropdown" aria-expanded="false" false>
-									Computer & Accessories <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li class="dropdown-item">
-										<a class="text-dark dropdown-toggle dropdown" data-bs-toggle="dropdown"
-											aria-expanded="false" false>
-											Lorem Ipsum <i class="fa-solid fa-chevron-right"></i>
-										</a>
-										<ul class="dropdown-menu ">
-											<li><a class="dropdown-item" href="#">Action</a></li>
-											<li><a class="dropdown-item" href="#">Another action</a></li>
-											<li><a class="dropdown-item" href="#">Something else here</a></li>
-										</ul>
+				<div class=" main drop-down dropdown show px-5">
 
-									</li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									Camera, Audio & video <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									Movies, Music & Video Games <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
+					<ul class="drop-downlinks dropdown-menu show ">
+						<li class="heading">
+							<h6>
+								<i class="fa-solid fa-list px-1"></i> All Departments
+							</h6>
+						</li>
+						<li class="fw-bold dropdown-item">
+							<a class="text-dark" href="#">Value of the day</a>
+						</li>
+						<li class="fw-bold dropdown-item">
+							<a class="text-dark" href="#">Top 100 Offers</a>
+						</li>
+						<li class="fw-bold dropdown-item">
+							<a class="text-dark" href="#">New Arrivals</a>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark" aria-expanded="false" false>
+								Computer & Accessories <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li class="dropdown-item">
+									<a class="text-dark dropdown-toggle dropdown" aria-expanded="false" false>
+										Lorem Ipsum <i class="fa-solid fa-chevron-right"></i>
+									</a>
+									<ul class="dropdown-menu ">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Another action</a></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+									</ul>
 
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									TV & Audio <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									Watches & Eyewear <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									Car,Motorbike & Industrial <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-							<li class="dropdown dropdown-item">
-								<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-									false>
-									Accessories <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Action</a></li>
-									<li><a class="dropdown-item" href="#">Another action</a></li>
-									<li><a class="dropdown-item" href="#">Something else here</a></li>
-								</ul>
-							</li>
-						</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								Camera, Audio & video <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								Movies, Music & Video Games <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								TV & Audio <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								Watches & Eyewear <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								Car,Motorbike & Industrial <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+						<li class="dropdown dropdown-item">
+							<a class="text-dark dropdown-toggle" aria-expanded="false" false>
+								Accessories <i class="fa-solid fa-chevron-right"></i>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>
+					</ul>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<a class="text-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" false>
+				<a class="text-dark dropdown-toggle" aria-expanded="false" false>
 					Accessories
 				</a>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -660,6 +651,380 @@
 				</div>
 			</div>
 		</div>
+		<!--===*** Bestseller products starts ***===-->
+		<div class="best-seller-section">
+			<header class="best-seller border-bottom">
+				<h5>Best Sellers</h5>
+				<ul class="best-seller-nav d-inline-flex">
+					<li class="active">Top 20</li>
+					<li> Smart Phones & Tablets</li>
+					<li> Laptops & Computers</li>
+					<li> Laptops & Computers</li>
+				</ul>
+			</header>
+			<div class="owl-carousel best-sellers-carousel">
+				<div class="item bg-secondary ">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item bg-secondary ">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item bg-secondary ">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 bg-secondary">
+							<div class="row">
+								<div class="product-image col-6">
+									<a href="#">
+										<img src="" alt="product-image">
+									</a>
+								</div>
+								<div class="product-details col-6">
+									<p>Game Console</p>
+									<h6>Game Console Controller</h6>
+									<div class="d-flex mt-3">
+										<h4 class="text-danger">$79.00</h4>
+										<p class="line-through">$90.00</p>
+										<i class="bi bi-bag"></i>
+										<i class="fa-solid fa-right-long"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--===*** Bestseller products ends ***===-->
+			</div>
+		</div>
+		<!--===*** Banner  starts ***===-->
+		<div class="banner">
+			<img src="assets/img/home page/home-banner.png" class="my-3" alt="banner image" style="width:100%">
+		</div>
+		<!--===***  Banner  ends ***===-->
 	</div>
 	<!--================================
 		*** main content ends ***
@@ -694,8 +1059,11 @@
 	<script src="assets/js/plugin/aos.js"></script>
 	<!-- Sticky JS -->
 	<script src="assets/js/plugin/jquery.sticky.js"></script>
+	<!-- initializing plugins -->
+	<script type="text/javascript" src="assets/js/plugin-init.js"></script>
 	<!--=== All Active ===-->
 	<script type="text/javascript" src="assets/js/main.js"></script>
+
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 	<script>
