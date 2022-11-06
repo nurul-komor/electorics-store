@@ -1,3 +1,35 @@
 /*******************************
 	All Responsive Code
 *******************************/
+
+/***********************************
+	medium device css starts (bigger than 768)
+*************************************/
+@media (min-width:768px) {
+	/* footer lg  */
+	.footer-lg{
+		display: block;
+	}
+	/* footer sm  */
+	.footer-sm{
+		display: none;
+	}
+}
+/***********************************
+	medium device css starts (bigger than 768)
+*************************************/
+
+/***********************************
+	small device  css starts (smaller than 768)
+*************************************/
+@media (max-width:768px) {
+	.footer-lg{
+		display: none;
+	}
+	.footer-sm{
+		display: block;
+	}
+}
+/***********************************
+	small device  css ends (smaller than 768)
+*************************************/

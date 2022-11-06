@@ -1,44 +1,86 @@
-// $('.drop-downlinks.dropdown-menu').click();
-// /* $(document).ready(function ($) {
-//   //meanmenu
-//   $("#navbar nav").meanmenu();
-//   // Elements Animation
-//   if ($(".wow").length) {
-//     var wow = new WOW({
-//       boxClass: "wow", // animated element css class (default is wow)
-//       animateClass: "animated", // animation css class (default is animated)
-//       offset: 0, // distance to the element when triggering the animation (default is 0)
-//       mobile: false, // trigger animations on mobile devices (default is true)
-//       live: true, // act on asynchronously loaded content (default is true)
-//     });
-//     wow.init();
-//   }
-//   // AOS Animation
-//   if ($("[data-aos]").length) {
-//     AOS.init({
-//       duration: 1000,
-//       mirror: true,
-//     });
-//   }
-// ----hero section Owl Carousel
-$(".owl-carousel ").owlCarousel({
-    autoWidth: false,
-    items: 1,
-    loop: true,
-    nav: false,
-    dots: true,
-    autoplay: false,
-    responsive: {
-        0: {
-            items: 1,
-        },
-        767: {
-            items: 1,
-        },
-        1024: {
-            items: 1,
-        },
-    },
+$('.drop-downlinks.dropdown-menu').click();
+/* $(document).ready(function ($) {
+  //meanmenu
+  $("#navbar nav").meanmenu();
+  
+new wow.init();
+  }
+  // AOS Animation
+  if ($("[data-aos]").length) {
+    AOS.init({
+      duration: 1000,
+      mirror: true,
+    });
+  }
+
+/**
+*
+******Hero section and  best - sellers - carousel
+*
+*/
+
+$(".hero-section,.best-sellers-carousel").owlCarousel({
+  autoWidth: false,
+  autoHeight: false,
+  items: 1,
+  loop: true,
+  nav: false,
+  dots: true,
+  mouseDrag: false,
+  animateIn: 'fadeInRight',
+  // autoplay: true,
+  animateOut: 'fadeOut',
+  autoplayTimeout: 3000,
+});
+/**
+*
+******recent-products-carousel
+*
+*/
+$(".recent-products-carousel").owlCarousel({
+  autoWidth: false,
+  items: 6,
+  loop: false,
+  nav: true,
+  dots: true,
+  autoplay: false,
+  margin: 10,
+  /*  responsive: {
+       0: {
+           items: 1,
+       },
+       767: {
+           items: 1,
+       },
+       1024: {
+           items: 1,
+       },
+   }, */
+});
+/**
+*
+******brand-carousels
+*
+*/
+$(".brand-carousel").owlCarousel({
+  autoWidth: true,
+  items: 6,
+  loop: true,
+  nav: true,
+  dots: true,
+  autoplay: true,
+  margin: 15,
+  /*  responsive: {
+       0: {
+           items: 1,
+       },
+       767: {
+           items: 1,
+       },
+       1024: {
+           items: 1,
+       },
+   }, */
 });
 
 //   /*Magnific image */
@@ -169,4 +211,7 @@ $(".owl-carousel ").owlCarousel({
 //   /*Function Calls*/
 //   preloader();
 // });
-//  */
+// wow js 
+
+new WOW().init();
+// Elements Animation

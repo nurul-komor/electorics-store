@@ -18,12 +18,24 @@ Author Name:Nurul Komor
 ==========================================
 */
 @font-face {
+    font-family: 'Helvetica-light';
+    src: url('../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf');
+}
+@font-face {
     font-family: 'Helvetica-regular';
-    src: url('../fonts/Helvetica.ttf');
+    src: url('../fonts/Helvetica-Font/Helvetica.ttf');
 }
 @font-face {
     font-family: 'Helvetica-bold';
-    src: url('../fonts/Helvetica-Bold.ttf');
+    src: url('../fonts/Helvetica-Font/Helvetica-Bold.ttf');
+}
+@font-face {
+    font-family: 'Helvetica-arial';
+    src: url('../fonts/Helvetica-Font/helvetica-compressed-5871d14b6903a.otf');
+}
+@font-face {
+    font-family: 'Helvetica-rounded';
+    src: url('../fonts/Helvetica-Font/helvetica-rounded-bold-5871d05ead8de.otf');
 }
 :root {
     --primary: #F8D604;
@@ -46,7 +58,7 @@ body {
 body {
     font-family: 'Helvetica-regular';
     color: var(--body);
-    font-size: 14px;
+   font-size:14px;
     line-height: 1.8;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -55,6 +67,7 @@ body {
 
 ul li {
     list-style: none;
+    border-radius: 0;
 }
 
 h1,
@@ -62,30 +75,212 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul {
+h6 {
     margin: 0;
     padding: 0;
     color: var(--dark);
+    font-family: "Helvetica-bold";
 }
-
+p,ul{
+    padding:0;
+    margin: 0;
+}
 a,
 a:hover {
     text-decoration: none;
+     color: var(--dark);
+     display: inline-block;
 }
 
 a:hover {
-    color: var(--white);
+    color: var(--dark);
 }
 
+.custom-dropdown{
+    visibility: hidden;
+    opacity: 0;
+    border-top: 5px solid var(--primary);
+    
+    animation-name: custom-dropdown;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    /* transform: translate(0px,20px);  */
 
+}
 
+@keyframes custom-dropdown {
+    0%{
+        transform: translate(0px,5px); 
+        -ms-transform: scaleY(0.9); /* IE 9 */
+        transform: scaleY(1.1) translate(0px,1px);
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transform: scaleY(1) translate(0px,10px);
+
+    }
+}
+
+.nav-container{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+/* ------------------------------------------------
+    ***Top bar   Css Start***
+------------------------------------------------- */
+.top-bar{
+    /* padding: 5px 0; */
+    font-size: 13.5px;
+}
+.top-bar ul.top-bar-icons li{
+    display: inline-block;
+    padding:0 8px;
+    position: relative;
+}
+.top-bar ul.top-bar-icons li i{
+    padding: 0 8px;
+    
+}
+.top-bar ul.top-bar-icons li:nth-child(1)::after,
+.top-bar ul.top-bar-icons li:nth-child(2)::after,
+.top-bar ul.top-bar-icons li:nth-child(3)::after{
+    content: "|";
+    position: absolute;
+    right: -5px;
+    opacity: 0.5;
+}
+/* ------------------------------------------------
+    *** Top bar Css Start***
+------------------------------------------------- */
+/* ------------------------------------------------
+    *** navbar Css Start***
+------------------------------------------------- */
+h1.logo {
+    font-size: 45;
+    font-family: "Helvetica-bold";
+    font-weight: 700;
+}
+h1.logo span{
+    color: var(--primary);
+    font-family: "Helvetica-rounded";
+}
+
+.nav-right  i, .nav-right  svg{
+    font-size: 19px;
+    font-weight: bold;
+    /* margin-top: 5px; */
+    padding: 5px;
+}
+
+.navigation-bar .nav-btn{
+    font-size: 20px;
+    padding: 0 15px;
+}
+.navigation-bar .nav-btn svg.show{
+    display: inline-block;
+}
+.navigation-bar .nav-btn svg.hide{
+    display: none;
+}
+
+.navbar-form{
+    height: 40px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 25px;
+    overflow: hidden;
+    align-content: center;
+}
+.navbar-form  input , .navbar-form  select{
+    border: none;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+    color: var(--dark);
+    font-size: 13px;
+    
+}
+.navbar-form  input {
+    padding-top: 2px
+}
+.navbar-form button,.navbar-form button:hover{
+    background-color: var(--primary);
+    box-shadow: none;
+    border: none;
+    color: var(--body);
+}
+.navbar-form button i{
+    font-size: 19px;
+    color: var(--dark);
+}
+/* ------------------------------------------------
+    *** navbar Css Start***
+------------------------------------------------- */
 /* ------------------------------------------------
     ***hero -section Top  Css Start***
 ------------------------------------------------- */
+.hero-section-container {
+    background: url('/assets/img/header.jpg') #535c68;
+    background-position: center center;
+    background-size:cover;
+    /* height: 420px; */
+    /* overflow: hidden; */
+}
 .hero-section{
-    min-height: 100vh;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section  h1{
+    font-family: "Helvetica-regular";
+    padding-bottom: 8px;
+}
+.hero-section  h5{
+    font-family: "Helvetica-bold";
+    padding: 8px 0;
+    color: #45BCEC;
+}
+.hero-section button {
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.hero-section button:hover{
+    background-color: #e9d137;
+}
+.hero-section .owl-item{
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-section .item img{
+    width: 100%;
+    height: 100%;
+}
+.hero-section .owl-dots{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
+.hero-section .owl-dots .owl-dot{
+    background-color: #dfe6e9;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transition: 0;
+}
+.hero-section .owl-dots .owl-dot.active {
+    width: 50px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    transition: 0;
 }
 /* ------------------------------------------------
     ***hero -section  Css ends***
@@ -93,17 +288,25 @@ a:hover {
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
 ------------------------------------------------- */
-
+.dropdown-button{
+    cursor: pointer;
+}
+.dropdown-menu.hover{
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+}
 .drop-downlinks{
     border:none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-   border-top: 5px solid var(--primary);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    position: relative;
    cursor: pointer;
 }
-.secondary-nav-items .drop-downlinks{
-     border-top: 5px solid var(--primary);
+
+.secondary-nav-items  .dropdown:hover > .dropdown-menu{
+    display: block;
 }
+
 .secondary-nav-items .drop-downlinks li.heading:first-child{
     background-color: var(--primary);
     padding-top: 8px;
@@ -115,6 +318,8 @@ a:hover {
 .drop-downlinks.dropdown-menu, .drop-downlinks ul {
     position: absolute;
     font-size: .875rem;
+    left: 0;
+    width: 100%;
 }
 
 .drop-downlinks  a.dropdown-toggle::after{
@@ -123,6 +328,8 @@ a:hover {
 
 .drop-downlinks  li {
     padding: 0 14px;
+    position: relative;
+
 }
 .drop-downlinks  li a{
     position: relative;
@@ -142,30 +349,61 @@ a:hover {
 .drop-downlinks  li > a {
     display: flex;
     justify-content: space-between;
-    
+    align-items:center;
 }
 
 .drop-downlinks  li > a svg{
     padding-left: 5px;
 }
-.drop-downlinks   ul.dropdown-menu{
+.drop-downlinks ul.dropdown-menu {
     position: absolute;
-    top: 30%;
+    top: -8%;
     left: 102%;
     transition: 0.5s;
     border: none;
     border-top: 5px solid var(--primary);
     width: 100%;
 }
+
 .drop-downlinks li:hover  > ul.dropdown-menu{
     display: block;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     transition: 1s;
 }
 .drop-downlinks   ul.dropdown-menu >li ul.dropdown-menu{
-    top: 50%;
+    top: 60%;
 }
-
+.allpage-dropdown .dropdown-button{
+    position: relative;
+}
+.allpage-dropdown .dropdown-button:after{
+    position: absolute;
+    content: "\25B2";
+    top: 84%;
+    left: 50%;
+    color: var(--primary);
+    transition: 0.7s;
+    opacity: 0;
+}
+.allpage-dropdown .dropdown-button:hover:after{
+    opacity: 1;
+}
+.allpage-dropdown li:hover>  a{
+    text-decoration:underline;
+}
 /* ------------------------------------------------
     ***secondary nav links  Css Start***
+------------------------------------------------- */
+/* ------------------------------------------------
+    ***brands carousel  Css Start***
+------------------------------------------------- */
+.brand-carousel .item img{
+    filter: grayscale(100%);
+    max-height: 90px;
+    width: auto;
+    max-width: 200px;
+    display: inline-block;
+}
+/* ------------------------------------------------
+    ***brand carousel  Css Start***
 ------------------------------------------------- */
