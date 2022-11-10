@@ -1,5 +1,7 @@
-$('.drop-downlinks.dropdown-menu').click();
-/* $(document).ready(function ($) {
+// $('.drop-downlinks.dropdown-menu').click();
+
+// $(document).ready(function ($) {
+/* 
   //meanmenu
   $("#navbar nav").meanmenu();
   
@@ -12,14 +14,14 @@ new wow.init();
       mirror: true,
     });
   }
-
+ 
 /**
 *
 ******Hero section and  best - sellers - carousel
 *
 */
 
-$(".hero-section,.best-sellers-carousel").owlCarousel({
+let owl = $(".hero-section,.best-sellers-carousel").owlCarousel({
   autoWidth: false,
   autoHeight: false,
   items: 1,
@@ -28,9 +30,19 @@ $(".hero-section,.best-sellers-carousel").owlCarousel({
   dots: true,
   mouseDrag: false,
   animateIn: 'fadeInRight',
-  // autoplay: true,
   animateOut: 'fadeOut',
+  autoplay: true,
   autoplayTimeout: 3000,
+});
+
+$(".hero-section").on('change.owl.carousel', function (event) {
+  var el = event.target;
+  var hero_section = $('.hero-section');
+  const siblings = $('.hero-section  .owl-item.active').siblings();
+  $('.hero-section  .owl-item.active h1').addClass('fadeInUpBig');
+  $('.hero-section  .owl-item.active h5').addClass('fadeInRight');
+  $('.hero-section  .owl-item.active h6').addClass('fadeIn');
+  $('.hero-section  .owl-item.active a').addClass('fadeIn');
 });
 /**
 *
@@ -214,4 +226,6 @@ $(".brand-carousel").owlCarousel({
 // wow js 
 
 new WOW().init();
-// Elements Animation
+  // Elements Animation
+
+// })

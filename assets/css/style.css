@@ -19,7 +19,7 @@ Author Name:Nurul Komor
 */
 @font-face {
     font-family: 'Helvetica-light';
-    src: url('../fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf');
+    src: url('../fonts/Helvetica-Font/Helvetica-light.ttf');
 }
 @font-face {
     font-family: 'Helvetica-regular';
@@ -236,30 +236,30 @@ h1.logo span{
 }
 .hero-section  h1{
     font-family: "Helvetica-regular";
-    padding-bottom: 8px;
 }
 .hero-section  h5{
     font-family: "Helvetica-bold";
-    padding: 8px 0;
     color: #45BCEC;
 }
-.hero-section button {
+.hero-section a {
     background-color: var(--primary);
     outline: none;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.hero-section button:hover{
+.hero-section a:hover{
     background-color: #e9d137;
 }
 .hero-section .owl-item{
+    height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 .hero-section .item img{
     width: 100%;
     height: 100%;
+    max-height: 420px;
+    transform: translate(0, 35px);
 }
 .hero-section .owl-dots{
     position: absolute;
